@@ -1,0 +1,15 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+// bower:scss
+@import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+// endbower
+
+@import '_form.scss';
+@import '_comment.scss';
+
+body {
+  padding: 0;
+}
+
+.container {
+  width:600px;
+}

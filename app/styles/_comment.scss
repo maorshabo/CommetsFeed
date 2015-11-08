@@ -1,0 +1,58 @@
+.filter {
+  margin-bottom: 20px;
+
+  .filter-form-control {
+    .input-group-addon {
+      background: white !important;
+      padding: 6px 6px;
+    }
+
+    .form-control {
+      border-left: 0;
+      box-shadow: 0 0 0;
+      border-color: #ccc;
+      padding: 6px 2px;
+    }
+
+    button {
+      border: 0;
+      background: transparent;
+    }
+  }
+}
+
+.commentsList {
+  padding: 20px;
+  background: #FFF;
+  border: #eee 1px solid;
+
+  .comment {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .imageContainer {
+      width: 80px;
+      margin-right: 5px;
+      img {
+        border-radius: 5px;
+      }
+    }
+    .detailsContainer {
+      span {
+        display: block;
+        width: 100%;
+      }
+      .email {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.notFound {
+  font-style: italic;
+  text-align: center;
+}

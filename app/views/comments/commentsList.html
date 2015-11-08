@@ -1,0 +1,14 @@
+<div class="commentsList">
+  <div class="filter">
+    <div class="input-group filter-form-control">
+      <span class="input-group-addon">
+                        <button type="submit">
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+      <input type="text" class="form-control" placeholder="Filter" ng-model="commentsList.filter">
+    </div>
+  </div>
+  <comment class="comment clearfix" ng-repeat="comment in commentsList.list | filter: commentsList.filter track by comment.id" comment="comment"></comment>
+  <div class="notFound" ng-if="commentsList.shouldShowNotFoundMessage()">Comment not found for "<strong>{{ commentsList.filter }}</strong>" search criteria</div>
+</div>
